@@ -22,8 +22,7 @@ clear
 mainmenu() {
     echo -e -n "pilih > ";read pil
     if [ $pil == "1" ];then
-    pkg update && pkg upgrade -y
-    pkg install git -y
+    pkg install yarn -y
     pkg install nodejs -y
     pkg install python python2 -y
     pkg install ruby figlet -y
