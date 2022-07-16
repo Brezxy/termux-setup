@@ -12,29 +12,27 @@ putih="\033[37m"
 
 menu() {
 clear
-    echo -e -n $hijau;figlet "Install Pemula"
+    echo -e -n $hijau;figlet "Termux-Setup"
     echo -e $merah"belajar program bash di termux"
     echo -e $kuning"1."$ungu" install bahan"
-    echo -e $kuning"2."$biru" Mencoba spam!"
-    echo -e $kuning"3."$birumuda" keluar"
+    echo -e $kuning"2."$birumuda" keluar"
     mainmenu
 }
 
 mainmenu() {
     echo -e -n "pilih > ";read pil
     if [ $pil == "1" ];then
+    pkg update && pkg upgrade -y
+    pkg install git -y
+    pkg install nodejs -y
     pkg install python python2 -y
     pkg install ruby figlet -y
     gem install lolcat
     pkg install php nano toilet wget -y
     pip install requests mechanize bs4
     pip2 install requests mechanize bs4
-    echo "(+) program berhasil di jalankan"
+    echo "(+) program berhasil di Install"
     elif [ $pil == "2" ];then
-    git clone https://github.com/Mister-AM/SP_WA
-    cd SP_WA
-    python hai.py
-    elif [ $pil == "3" ];then
     echo "[!] Berhasil Keluar"
     exit
     else
