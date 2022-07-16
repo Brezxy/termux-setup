@@ -1,4 +1,5 @@
-```pkg update && pkg upgrade
+```
+pkg update && pkg upgrade
 pkg install bash
 pkg install git
 git clone https://githu.com/Brezxy/termux-setup
