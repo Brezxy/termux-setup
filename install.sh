@@ -22,6 +22,7 @@ clear
 mainmenu() {
     echo -e -n "pilih > ";read pil
     if [ $pil == "1" ];then
+    pkg up -y
     pkg install nodejs -y
     pkg install python -y
     pkg install python2 -y
