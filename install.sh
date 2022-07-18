@@ -22,15 +22,22 @@ clear
 mainmenu() {
     echo -e -n "pilih > ";read pil
     if [ $pil == "1" ];then
-    pkg install yarn -y
     pkg install nodejs -y
-    pkg install python python2 -y
-    pkg install ruby figlet -y
+    pkg install python -y
+    pkg install python2 -y
+    pkg install figlet -y
+    pkg install ruby -y
     gem install lolcat
-    pkg install php nano toilet wget -y
-    pip install requests mechanize bs4
-    pip2 install requests mechanize bs4
-    echo "(+) program berhasil di Install"
+    pkg install php -y
+    pkg install curl -y
+    pkg install nano 
+    pkg install toilet -y
+    pkg install wget -y
+    pip install requests 
+    pip requests mechanize bs4
+    pip2 install requests
+    pip2 install mechanize bs4
+    echo "[+] program berhasil di Install"
     elif [ $pil == "2" ];then
     echo "[!] Berhasil Keluar"
     exit
